@@ -1,4 +1,4 @@
-let mapleader = ","
+let mapleader=","
 
 map <leader>p :FZF<CR>
 map <leader>f :FZF<CR>
@@ -15,3 +15,6 @@ map <c-f> :ALEPrevious<CR>
 
 " Shortcut to close all other tabs and windows
 command Ont exec 'only|tabo'
+
+" Comment/uncomment lines
+map <leader>/   <plug>NERDCommenterToggle
