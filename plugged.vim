@@ -1,7 +1,7 @@
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hhvm/vim-hack'
 Plug 'jlfwong/vim-mercenary'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
