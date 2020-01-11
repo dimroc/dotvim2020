@@ -1,7 +1,8 @@
 ## Lean vim/nvim dot files
 
-A leaner cleaner rebuild of [my old dotvim files](https://github.com/dimroc/dotvim) that's compatible with both
-vim and nvim. For nvim one must still from vim as [described here](https://neovim.io/doc/user/nvim.html#nvim-from-vim).
+A leaner, cleaner rebuild of [my old dotvim files](https://github.com/dimroc/dotvim) that's compatible with both
+vim and nvim. For nvim one must still load from vim as
+[described here](https://neovim.io/doc/user/nvim.html#nvim-from-vim).
 
 
 ### Usage
@@ -14,7 +15,7 @@ $ vim . # Then :PlugInstall
 $ # Done
 ```
 
-
 ### Notes
 
-No format support for macvim or gvim. Mostly due to dependency on fzf.
+- Custom options, commands, and globals live in the ./plugin/ folder
+- No formal support for macvim or gvim. Mostly due to dependency on fzf.
