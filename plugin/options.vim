@@ -133,16 +133,11 @@ set wildignore+=components      " ...Also components.
 set wildignore+=.bundle         " ...Also .bundle.
 set wildignore+=vendor          " ...Also vendor.
 
-set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers
 set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
 set cursorline                  " Highlight current line
-
-set laststatus=2                " Always show statusline
-
 set swapfile                    " Keep swapfiles
-set nowrap
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
