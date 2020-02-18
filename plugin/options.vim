@@ -147,4 +147,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
+if !has('gui_running')
+  set t_Co=256
+endif
+
 syntax on
