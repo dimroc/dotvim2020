@@ -1,6 +1,7 @@
-/bundle
-/sessions
-/session
-.netrwhist
-/plugged
 *.swp
+.netrwhist
+/black
+/bundle
+/plugged
+/session
+/sessions

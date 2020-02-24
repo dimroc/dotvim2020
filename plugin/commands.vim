@@ -39,3 +39,11 @@ map gd :call CocActionAsync('jumpDefinition')<CR>
 " https://github.com/xolox/vim-session/blob/9e9a6088f0554f6940c19889d0b2a8f39d13f2bb/plugin/session.vim#L169
 command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names OS call xolox#session#open_cmd(<q-args>, <q-bang>, 'OpenSession')
 command! -bar -bang -nargs=? -complete=customlist,xolox#session#complete_names_with_suggestions SS call xolox#session#save_cmd(<q-args>, <q-bang>, 'SaveSession')
+
+" Write all writeable buffers when changing buffers or losing focus.
+set autowriteall                " Save when doing various buffer-switching things.
+autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
+
+" lint py on save
+autocmd BufWritePre *.py execute ':Black'
+autocmd BufWritePost *.py call flake8#Flake8()

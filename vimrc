@@ -2,6 +2,7 @@
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'MattesGroeger/vim-bookmarks'
 Plug 'Yggdroot/indentLine'
 Plug 'chriskempson/base16-vim'
 Plug 'dense-analysis/ale'
@@ -16,8 +17,10 @@ Plug 'mbbill/undotree'
 Plug 'mhinz/vim-signify'
 Plug 'mtth/scratch.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'nvie/vim-flake8'
 Plug 'preservim/nerdcommenter'
+Plug 'psf/black'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
